@@ -1,0 +1,60 @@
+<div class="register-form text-center">
+    <main>
+        <form (ngSubmit) ="onClickSubmit()"  [formGroup]="registerForm">
+            <h1>Create your account!</h1>
+
+            <div class="form-floating">
+                <input type="text"
+                       class="form-control" 
+                       id="email-input" 
+                       placeholder=""
+                       formControlName="emailForm"
+                       [ngClass]="{'is-invalid' : registerForm.get('emailForm')?.dirty || 
+                                                  registerForm.get('emailForm')?.touched && 
+                                                  registerForm.get('emailForm')?.invalid}">
+                <label for="email-input">Email</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="firstname-input" 
+                       placeholder=""
+                       formControlName="firstNameForm">
+                <label for="firstname-input">Prenom</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="lastname-input" 
+                       placeholder=""
+                       formControlName="lastNameForm">
+                <label for="lastname-input">Nom</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="pseudo-input" 
+                       placeholder=""
+                       formControlName="pseudoForm">
+                <label for="pseudo-input">Pseudo</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" 
+                       class="form-control"
+                       [ngClass]="{'is-invalid' : registerForm.get('password')?.dirty || registerForm.get('password')?.touched && registerForm.get('password')?.invalid}"
+                       id="pwd-input"
+                       placeholder=""
+                       formControlName="passwordForm">
+                <label for="pwd-input">Password</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary"
+                    type="submit"
+                    [disabled]="registerForm.invalid">REGISTER</button>
+        </form>
+    </main>
+</div>
