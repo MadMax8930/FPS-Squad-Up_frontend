@@ -1,4 +1,5 @@
-<div class="container">
+<!--<div class="wrapper">
+ <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
    <a href="#" class="navbar-brand ">
      <img src="assets/logoBrand.png" alt="Website Logo" width="60%">
@@ -11,8 +12,7 @@
            data-bs-target="#toggleMobileMenu"
            aria-controls="toggleMobileMenu"
            aria-expanded="false"
-           aria-lable="Toggle navigation"
-        >
+           aria-lable="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -25,7 +25,7 @@
               <a class="nav-link" routerLink="/search" href="#">SEARCH</a>
             </li>
             <li>
-              <a class="nav-link" routerLink="/games" href="#">GAMES</a>
+              <a class="nav-link" routerLink="/account/register" href="#">SIGN-UP</a>
             </li>
             <li>
               <a class="nav-link" routerLink="/account/login" href="#">ACCOUNT</a>
@@ -34,3 +34,39 @@
         </div>
    </nav>
 </div>
+</div>-->
+<header>
+  <div class="container">
+  <div class="container-logo">
+    <img class="logo" src="assets/logo-web.png" alt="logo" width="80%">
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a class="nav-link" routerLink="/home">HOME</a></li>
+      <li><a class="nav-link" routerLink="/account/register">SIGNUP</a></li>
+      <li><a class="nav-link" routerLink="/games">GAMES</a></li>
+    </ul>
+  </nav>
+  <div class="btn-account">
+    <a class="cta" routerLink="/account/login"><button>ACCOUNT</button></a>
+  </div>
+</div>
+</header>
+
+<!-- <header>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo-web.png" alt="logo">
+    </div>
+    <div class="navbar">
+      <ul class="nav-links">
+        <li><a class="nav-link" routerLink="/home">HOME</a></li>
+        <li><a class="nav-link" routerLink="/account/register">SIGNUP</a></li>
+        <li><a class="nav-link" routerLink="/games">GAMES</a></li>
+      </ul>
+    </div>
+    <div class="btn-account">
+      <a class="cta" routerLink="/account/login"><button>ACCOUNT</button></a>
+    </div>
+  </div>
+</header> -->

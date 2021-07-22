@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
-import { SearchComponent } from './search/search.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AccountComponent } from './account/account.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -18,13 +17,10 @@ const routes: Routes = [
      { path: 'register', component: RegisterComponent}
   ]},
 
-  { path: '', canActivate: [AuthGuard], component: LayoutComponent, children: [
+  { path: '', canActivate: [AuthGuard], component: HomeComponent, children: [
 
      { path: '', redirectTo: '/home', pathMatch: 'full'},
      { path: 'home', component: HomeComponent },
-     { path: 'home', component: CarouselComponent },
-     { path: 'games', component: CarouselComponent },
-     { path: 'search', component: SearchComponent },
      { path: 'not-found', component: FourOhFourComponent },
      { path: '**', redirectTo: 'not-found'}
   ]}

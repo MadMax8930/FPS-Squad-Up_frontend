@@ -9,7 +9,6 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { GamesComponent } from './games/games.component';
-import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,7 +16,6 @@ import { AccountComponent } from './account/account.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './services/auth.interceptor';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselServiceService } from './services/carousel-service.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +24,6 @@ import { CarouselServiceService } from './services/carousel-service.service';
     NavbarComponent,
     FooterComponent,
     GamesComponent,
-    SearchComponent,
     HomeComponent,
     FourOhFourComponent,
     AccountComponent,

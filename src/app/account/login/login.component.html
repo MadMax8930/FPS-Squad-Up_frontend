@@ -1,36 +1,48 @@
-<div class="login-form text-center">
-    <main class="form-signin">
-      <form (ngSubmit)="onClickSubmit(loginForm)" #loginForm="ngForm">
-        <h1>Merci de vous connecter</h1>
-    
+<body>
+  <div id="background-page">
+  <div class="wrapper" id="img">
+    <div class="login-form form-signin text-center" id="login-position">
+      <span>
+        <div class="logo-website">
+          <a href="#" class="logo">
+            <img src="assets/logoBrand.png" alt="Website Logo" width="80%">
+          </a>
+        </div>
+      </span>
+
+      <form (ngSubmit)="onClickSubmit(loginForm)" #loginForm="ngForm"> 
+
         <div class="form-floating">
+          <label id="floatingInput">Username</label>
           <input type="email" 
                   class="form-control" 
-                  id="floatingInput" 
+                  for="floatingInput" 
                   placeholder="" 
                   name="email" 
                   ngModel 
                   required>
-          <label for="floatingInput">Email</label>
         </div>
+
         <div class="form-floating">
+          <label id="floatingPassword">Password</label>
           <input type="password" 
                   class="form-control" 
-                  id="floatingPassword" 
+                  for="floatingPassword" 
                   placeholder="" 
                   name="password" 
                   ngModel 
                   required>
-          <label for="floatingPassword">Password</label>
         </div>
     
-        <button class="w-100 btn btn-lg btn-primary" 
+        <button class="btn btn-lg btn-primary" 
                 type="submit" 
-                [disabled]="loginForm.invalid">LOGIN</button>
+                [disabled]="loginForm.invalid">LOGIN
+        </button>
       </form>
-    </main>
+    </div>
   </div>
-
+  </div>
+</body>
 
   <!--
 <div class="login-form text-center">
