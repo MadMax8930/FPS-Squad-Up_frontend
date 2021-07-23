@@ -1,7 +1,15 @@
-<div class="register-form text-center">
-    <main>
+<body>
+   <div class="wrapper" id="img">
+      <div class="register-form text-center" id="register-position">
+        <span>
+            <div class="logo-website">
+              <a href="#" class="logo">
+                <img src="assets/logoBrand.png" alt="Website Logo" width="80%">
+              </a>
+            </div>
+          </span>
         <form (ngSubmit) ="onClickSubmit()"  [formGroup]="registerForm">
-            <h1>Create your account!</h1>
+            <h1>Create account</h1>
 
             <div class="form-floating">
                 <input type="text"
@@ -52,9 +60,10 @@
                 <label for="pwd-input">Password</label>
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary"
+            <button class="btn btn-lg btn-primary"
                     type="submit"
                     [disabled]="registerForm.invalid">REGISTER</button>
         </form>
-    </main>
-</div>
+      </div>
+   </div>
+</body>

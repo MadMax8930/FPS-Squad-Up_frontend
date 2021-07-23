@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
         firstNameForm : new FormControl(''),
         lastNameForm : new FormControl(''),
         pseudoForm : new FormControl('', Validators.required),
-        passwordForm : new FormControl('', [Validators.required, Validators.minLength(8)])
+        passwordForm : new FormControl('', Validators.required)
       }
     );
   }

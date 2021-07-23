@@ -1,5 +1,4 @@
 <body>
-  <div id="background-page">
   <div class="wrapper" id="img">
     <div class="login-form form-signin text-center" id="login-position">
       <span>
@@ -11,6 +10,7 @@
       </span>
 
       <form (ngSubmit)="onClickSubmit(loginForm)" #loginForm="ngForm"> 
+        <h1>Access account</h1>
 
         <div class="form-floating">
           <label id="floatingInput">Username</label>
@@ -40,7 +40,6 @@
         </button>
       </form>
     </div>
-  </div>
   </div>
 </body>
 

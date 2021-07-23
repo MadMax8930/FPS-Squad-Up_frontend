@@ -15,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AccountComponent } from './account/account.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './services/auth.interceptor';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselGamesComponent } from './carousel-games/carousel-games.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     AccountComponent,
     LoginComponent,
     RegisterComponent,
-    CarouselComponent
+    CarouselGamesComponent,
+    SearchComponent,
 
   ],
   imports: [

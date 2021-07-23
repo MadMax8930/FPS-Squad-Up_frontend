@@ -8,7 +8,7 @@ import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AccountComponent } from './account/account.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselGamesComponent } from './carousel-games/carousel-games.component';
 
 const routes: Routes = [
   { path: 'account', component: AccountComponent, children: [
@@ -19,8 +19,9 @@ const routes: Routes = [
 
   { path: '', canActivate: [AuthGuard], component: HomeComponent, children: [
 
-     { path: '', redirectTo: '/home', pathMatch: 'full'},
      { path: 'home', component: HomeComponent },
+     { path: '', redirectTo: '/home', pathMatch: 'full'},
+     { path: 'games', component: GamesComponent },
      { path: 'not-found', component: FourOhFourComponent },
      { path: '**', redirectTo: 'not-found'}
   ]}

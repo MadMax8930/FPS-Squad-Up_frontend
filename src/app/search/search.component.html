@@ -1,0 +1,72 @@
+<body>
+<div class="wrapper">
+<div class="container">
+    <div class="jumbotron">
+        <h1>ADVANCED SEARCH</h1>
+        <p class="lead"><small><i>The accuracy depends on the submitted information</i></small></p></div>
+      
+    <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+
+        <div class="criteria1">
+            <label for="game">fps-Game</label>
+            <select formControlName="game" class="form-control" (change)="findSquadmate($event)">
+                <option disabled>Squadmate's fps-game</option>
+                <option>Select your squadmate's first-person-shooter game</option>
+                <option *ngFor="let choice of gameList">{{choice}}</option>
+            </select>
+            <div *ngIf="f.game.touched && f.game.invalid" class="alert alert-danger">
+                <div *ngIf="f.game.errors.required">Name is required.</div>
+            </div>
+        </div>
+        <div class="criteria2">
+            <label for="system">gaming-on</label>
+            <select formControlName="system" class="form-control" (change)="findSquadmate($event)">
+                <option disabled>Squadmate's gaming support</option>
+                <option>Select your squadmate's gaming system</option>
+                <option *ngFor="let choice of systemList">{{choice}}</option>
+            </select>
+            <div *ngIf="f.system.touched && f.system.invalid" class="alert alert-danger">
+                <div *ngIf="f.system.errors.required">Name is required.</div>
+            </div>
+        </div>
+        <div class="criteria3">
+            <label for="behaviour">fps-Behaviour</label>
+            <select formControlName="behaviour" class="form-control" (change)="findSquadmate($event)">
+                <option disabled>Squadmate's gaming behaviour profile</option>
+                <option>Select your squadmate's Fps-Behaviour</option>
+                <option *ngFor="let choice of behaviourList">{{choice}}</option>
+            </select>
+            <div *ngIf="f.behaviour.touched && f.behaviour.invalid" class="alert alert-danger">
+                <div *ngIf="f.behaviour.errors.required">Name is required.</div>
+            </div>
+        </div>
+        <div class="criteria4">
+            <label for="strength">fps-Strength</label>
+            <select formControlName="strength" class="form-control" (change)="findSquadmate($event)">
+                <option disabled>Squadmate's gaming skill type</option>
+                <option>Select your squadmate's Fps-Strength</option>
+                <option *ngFor="let choice of strengthList">{{choice}}</option>
+            </select>
+            <div *ngIf="f.strength.touched && f.strength.invalid" class="alert alert-danger">
+                <div *ngIf="f.stength.errors.required">Name is required.</div>
+            </div>
+        </div>
+        <div class="criteria5">
+            <label for="country">gaming-from</label>
+            <select formControlName="country" class="form-control" (change)="findSquadmate($event)">
+                <option disabled>Squadmate's country (for ping & comms)</option>
+                <option>Select your squadmate's country</option>
+                <option *ngFor="let choice of countryList">{{choice}}</option>
+            </select>
+            <div *ngIf="f.country.touched && f.country.invalid" class="alert alert-danger">
+                <div *ngIf="f.country.errors.required">Name is required.</div>
+            </div>
+        </div>
+    </div>
+      
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Search</button>
+    </form>
+</div>
+</div>
+</body>
