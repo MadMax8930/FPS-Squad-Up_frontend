@@ -17,6 +17,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './services/auth.interceptor';
 import { CarouselGamesComponent } from './carousel-games/carousel-games.component';
 import { SearchComponent } from './search/search.component';
+import { AboutComponent } from './about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { SearchComponent } from './search/search.component';
     RegisterComponent,
     CarouselGamesComponent,
     SearchComponent,
+    AboutComponent,
 
   ],
   imports: [
@@ -39,7 +42,8 @@ import { SearchComponent } from './search/search.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [{ provide : HTTP_INTERCEPTORS, useClass : AuthInterceptor, multi: true}],
   bootstrap: [AppComponent]
