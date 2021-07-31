@@ -3,71 +3,31 @@
 
 /*-------------mobile----------------*/
 
-@media screen and (max-width: 530px){
-
-
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
   }
   
   .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-   
-  }
-  
-  img {
+    max-width: 100%;
     width: 100%;
     height: 100%;
-  }
-  
-  li, a {
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 500;
-    font-size: 7px;
-    color: #e3e1e4;
-    text-decoration: none;
-  }
-   
-  button {
-    font-family: 'Rubik Mono One', sans-serif; 
-    font-weight: 500;
-    font-size: 16px;
-    color: #e3e1e4;
-    text-decoration: none;
+    background-color: #24252a;
   }
  
-  ul {
-    display:flex;
-  }
-
-  ul li {
-    list-style: none;
-    margin: 10px;
-  }
-  
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-  
-  }
   .container-logo {
-    width: 21%;
-    height: 21%;
+    width: 18%;
+    height: 18%;
     content: url('/assets/logo-web-white.png');
   }
 
   .container-logo:hover {
-    width: 21%;
-    height: 21%;
+    width: 19%;
+    height: 19%;
     content: url('/assets/logo-web-hover.png');
   }
 
@@ -76,22 +36,31 @@
     height: 100%;
   }
 
-  .nav-links {
+  .container-signup {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 3px;
+   }
+  
+  .container-signup a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    font-size: 7px;
+    color: #e3e1e4;
+    text-decoration: none;
     list-style: none;
    }
   
-  .nav-links li {
-    display: inline-block;
-    padding: 0 3px;
-   }
-  
-  .nav-links li a {
-    transition: all 0.3s ease 0s;
-   }
-  
-  .nav-links li a:hover {
+  .container-signup a:hover {
     color: rgba(6, 233, 138, 0.8);
    }
+
+  .btn {
+    font-family: 'Rubik Mono One', sans-serif; 
+    font-weight: 500;
+    font-size: 6px;
+  }
 
   button {
     padding: 3px 3px;
@@ -100,6 +69,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
   }
   
   button:hover {
@@ -107,242 +77,158 @@
     color: #24252a;
   }
 
-  .btn {
-    font-size: xx-small;
-  }
-  }
-
 /* -------------destop------------ */
 
-@media screen and (min-width: 530px){
+@media screen and (min-width: 400px) {
+  .container-signup a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    font-size: 11px;
+    color: #e3e1e4;
+    text-decoration: none;
+    list-style: none;
+   }
+
+  .btn {
+    font-weight: 400;
+    font-size: 8px;
+  }
+
+  button {
+    padding: 2px 4px;
+  }
+
+  .container-logo {
+    width: 18%;
+    height: 18%;
+    content: url('/assets/logo-web-white.png');
+  }
+
+  .container-logo:hover {
+    width: 19%;
+    height: 19%;
+    content: url('/assets/logo-web-hover.png');
+  }
+
+}
 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #24252a;
- }
+@media screen and (min-width: 620px) {
+  .container-signup a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    font-size: 12px;
+    color: #e3e1e4;
+    text-decoration: none;
+   }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
- }
+   .btn {
+    font-weight: 500;
+    font-size: 10px;
+  }
 
-.container-logo {
-  width: 14%;
-  height: 14%;
-  content: url('/assets/logo-web-white.png');
- }
+  button {
+    padding: 4px 6px;
+    background-color: rgba(238, 12, 23, 0.8);
+    color: #e3e1e4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
 
-.container-logo:hover {
-  width: 14%;
-  height: 14%;
-  content: url('/assets/logo-web-hover.png');
- }
+  .container-logo {
+    width: 16%;
+    height: 16%;
+    content: url('/assets/logo-web-white.png');
+  }
 
-img {
-  width: 100%;
-  height: 100%;
- }
+  .container-logo:hover {
+    width: 17%;
+    height: 17%;
+    content: url('/assets/logo-web-hover.png');
+  }
 
-li, a {
-  font-family: 'Press Start 2P', cursive;
-  font-weight: 500;
-  font-size: 16px;
-  color: #e3e1e4;
-  text-decoration: none;
- }
- 
-button {
-  font-family: 'Rubik Mono One', sans-serif; 
-  font-weight: 500;
-  font-size: 16px;
-  color: #e3e1e4;
-  text-decoration: none;
- }
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
- }
-
-.logo {
-  cursor: pointer;
- }
-
-.nav-links {
-  list-style: none;
- }
-
-.nav-links li {
-  display: inline-block;
-  padding: 0 18px;
- }
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
- }
-
-.nav-links li a:hover {
-  color: rgba(6, 233, 138, 0.8);
- }
-
-button {
-  padding: 4px 6px;
-  background-color: rgba(238, 12, 23, 0.8);
-  color: #e3e1e4;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
- }
-
-button:hover {
-  background-color: rgba(6, 233, 138, 0.8);
-  color: #24252a;
- }
-
-.btn {
-  font-size: small;
- }
- }
+}
 
 
-@media screen and (min-width: 530px) and (max-width: 990px){
-
-
- button {
-  padding: 3px 5px;
- }
-
- li, a {
+@media screen and (min-width: 890px) {
+  .container-signup a {
+    transition: all 0.3s ease 0s;
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     font-size: 14px;
     color: #e3e1e4;
     text-decoration: none;
-}
-   
- button {
-    font-family: 'Rubik Mono One', sans-serif; 
+   }
+
+   .btn {
     font-weight: 500;
-    font-size: 16px;
-    color: #e3e1e4;
-    text-decoration: none;
-}
+    font-size: 13px;
+  }
 
-.container-logo {
-  width: 20%;
-  height: 20%;
-  content: url('/assets/logo-web-white.png');
-}
-
-.container-logo:hover {
-  width: 20%;
-  height: 20%;
-  content: url('/assets/logo-web-hover.png');
-}
-
- img {
-  width: 100%;
-  height: 100%;
- }
-
- button {
-  padding: 3px 5px;
- }
-
- .btn {
-  font-size: small;
- }
- }
-
-
- @media screen and (min-width: 530px) and (max-width: 768px){
-
- 
   button {
-   padding: 2px 3px;
-  }
- 
-  li, a {
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 500;
-    font-size: 9px;
+    padding: 3px 7px;
+    background-color: rgba(238, 12, 23, 0.8);
     color: #e3e1e4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
     text-decoration: none;
   }
-   
-  button {
-    font-family: 'Rubik Mono One', sans-serif; 
-    font-weight: 500;
-    font-size: 16px;
-    color: #e3e1e4;
-    text-decoration: none;
-  }
- 
+
   .container-logo {
-    width: 20%;
-    height: 20%;
+    width: 16%;
+    height: 16%;
     content: url('/assets/logo-web-white.png');
   }
 
   .container-logo:hover {
-    width: 20%;
-    height: 20%;
+    width: 17%;
+    height: 17%;
     content: url('/assets/logo-web-hover.png');
   }
- 
-  img {
-   width: 100%;
-   height: 100%;
-  }
 
-  .btn {
-    font-size: x-small;
-  }
-  }
- 
+}
 
-/* 
-@media screen and (max-width: 857px) {
-   header{
-     border-: 1px solid blue;
-     width: 100%;
+
+@media screen and (min-width: 1120px) {
+  .container-signup a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    color: #e3e1e4;
+    text-decoration: none;
    }
 
-  .container-logo {
-    width: 10%;
+   .btn {
+    font-weight: 500;
+    font-size: 16px;
   }
-} */
 
+  button {
+    padding: 3px 7px;
+    background-color: rgba(238, 12, 23, 0.8);
+    color: #e3e1e4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
 
-/*
-/*.wrapper {
-  width:100%;
-  height:100%;
-  position: absolute;
-  background-color: pink; f2ebf4
-}*/
+  .container-logo {
+    width: 16%;
+    height: 16%;
+    content: url('/assets/logo-web-white.png');
+  }
 
-/*
-.container {
-  width: 100vh;
-  height: 100vh;
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  
-}*/
-/*
-#navbar { 
-  font-family: 'Rubik Mono One', sans-serif; 
-}*/
+  .container-logo:hover {
+    width: 17%;
+    height: 17%;
+    content: url('/assets/logo-web-hover.png');
+  }
+
+}

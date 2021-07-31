@@ -8,7 +8,6 @@ import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AccountComponent } from './account/account.component';
-import { CarouselGamesComponent } from './carousel-games/carousel-games.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
