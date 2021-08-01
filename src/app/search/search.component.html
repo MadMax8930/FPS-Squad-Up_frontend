@@ -1,4 +1,4 @@
-<body>
+<section>
 <div class="wrapper">
 <div class="container">
     <div class="title-search">
@@ -11,8 +11,8 @@
         <div class="criteria1">
             <label for="game">fps-Game</label>
             <select formControlName="game" class="form-control" (change)="findSquadmate($event)">
-                <option disabled>Squadmate's fps-game</option>
-                <option>Select your squadmate's first-person-shooter game</option>
+                <option class="test" disabled>Select your squadmate's first-person-shooter game</option>
+                <option>criteria #1</option>
                 <option *ngFor="let choice of gameList">{{choice}}</option>
             </select>
             <div *ngIf="f.game.touched && f.game.invalid" class="alert alert-danger">
@@ -22,8 +22,8 @@
         <div class="criteria2">
             <label for="system">gaming-on</label>
             <select formControlName="system" class="form-control" (change)="findSquadmate($event)">
-                <option disabled>Squadmate's gaming support</option>
-                <option>Select your squadmate's gaming system</option>
+                <option disabled>Select your squadmate's gaming system</option>
+                <option>criteria #2</option>
                 <option *ngFor="let choice of systemList">{{choice}}</option>
             </select>
             <div *ngIf="f.system.touched && f.system.invalid" class="alert alert-danger">
@@ -33,8 +33,8 @@
         <div class="criteria3">
             <label for="behaviour">fps-Behaviour</label>
             <select formControlName="behaviour" class="form-control" (change)="findSquadmate($event)">
-                <option disabled>Squadmate's gaming behaviour profile</option>
-                <option>Select your squadmate's Fps-Behaviour</option>
+                <option disabled>Select your squadmate's Fps-Behaviour profile</option>
+                <option>criteria #3</option>
                 <option *ngFor="let choice of behaviourList">{{choice}}</option>
             </select>
             <div *ngIf="f.behaviour.touched && f.behaviour.invalid" class="alert alert-danger">
@@ -44,8 +44,8 @@
         <div class="criteria4">
             <label for="strength">fps-Strength</label>
             <select formControlName="strength" class="form-control" (change)="findSquadmate($event)">
-                <option disabled>Squadmate's gaming skill type</option>
-                <option>Select your squadmate's Fps-Strength</option>
+                <option disabled>Select your squadmate's Fps-Strength profile</option>
+                <option>criteria #4</option>
                 <option *ngFor="let choice of strengthList">{{choice}}</option>
             </select>
             <div *ngIf="f.strength.touched && f.strength.invalid" class="alert alert-danger">
@@ -55,9 +55,10 @@
         <div class="criteria5">
             <label for="country">gaming-from</label>
             <select formControlName="country" class="form-control" (change)="findSquadmate($event)">
-                <option disabled>Squadmate's country (for ping & comms)</option>
-                <option>Select your squadmate's country</option>
+                <option disabled>Select your squadmate's country for ping & comms</option>
+                <option>criteria #5</option>
                 <option *ngFor="let choice of countryList">{{choice}}</option>
+
             </select>
             <div *ngIf="f.country.touched && f.country.invalid" class="alert alert-danger">
                 <div *ngIf="f.country.errors.required">Name is required.</div>
@@ -69,4 +70,4 @@
     </form>
 </div>
 </div>
-</body>
+</section>
