@@ -12,8 +12,8 @@ export class SearchComponent implements OnInit {
 
   behaviourList: any = ['Casual: Plays for fun', 'Indifferent: No f#cks given', 'Competitive: Plays to win', 'Sweat/Tryhard: Only victory matters'];
   strengthList: any = ['Aggro Rusher', 'Sharp Shooter', 'Clutch Master', 'Sneaky Killer', 'Support Brother', 'Wicked Sniper'];
-  gameList: any = ['Wolfenstein', 'Overwatch', 'DOOM', 'Halo Series', 'Crysis Series', 'Battlefield 1', 'Battlefield 4', 'Battlefield 5', 'Modern Warfare', 'Warzone', 'Black Ops Cold War', 'Apex Legends', 'PUBG', 'CS:GO', 'Escape from Tarkov', 'Quake Champions', 'Squad', 'Titanfall Series', 'Destiny 2', 'Rainbow Six Siege', 'Call of Duty WW2', 'Battlefield 3', 'Battlefield Bad Company 2', 'Valorant', 'Payday']
-  systemList: any = ['PC', 'PS4', 'PS5', 'Xbox One', 'Xbox Series S/X', 'Nintendo Switch', 'Any (Crossplay)'];
+  gameList: any = ['Wolfenstein', 'Borderlands 2', 'Warface', 'Overwatch', 'DOOM', 'Halo Series', 'Crysis Series', 'Dying Light', 'Battlefield 1', 'Battlefield 4', 'Battlefield 5', 'Ghost Recon Series', 'Hunt Showdown', 'GTA V', 'Left 4 Dead', 'Insurgency', 'Rising Storm 2', 'Verdun', 'World War 3', 'Red Orchestra 2', 'Modern Warfare', 'Warzone', 'Black Ops Cold War', 'Apex Legends', 'PUBG', 'CS:GO', 'Escape from Tarkov', 'Quake Champions', 'Squad', 'Titanfall Series', 'Destiny 2', 'Rainbow Six Siege', 'Call of Duty WW2', 'Far Cry Series', 'Roblox', 'Battlefield 3', 'Battlefield Bad Company 2', 'Valorant', 'Payday']
+  systemList: any = ['PC', 'PS4', 'PS5', 'Xbox One', 'Xbox Series S/X', 'Nintendo Switch', 'Mobile', 'Any / Crossplay'];
   countryList: any = ['USA', 'France', 'Spain', 'Bamba', 'Italy'];
 
   

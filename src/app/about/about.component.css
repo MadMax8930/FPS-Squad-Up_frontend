@@ -43,30 +43,69 @@ div span:hover, fa-icon:hover {
 
 @media screen and (max-width: 560px) {
     
-  .about-text-click {
-    font-family: "Press Start 2P", cursive;
-    font-size: 8px;
-    font-weight: 500;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+    .about-text-click {
+      font-family: "Press Start 2P", cursive;
+      font-size: 9px;
+      font-weight: 500;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+    }
   }
-}
-
-@media screen and (max-width: 380px) {
-  .about-text-click {
-    font-family: "Press Start 2P", cursive;
-    font-size: 6px;
-    font-weight: 400;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+  
+  @media screen and (max-width: 380px) {
+    .about-text-click {
+      font-family: "Press Start 2P", cursive;
+      font-size: 6px;
+      font-weight: 400;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .btn {
+      font-size: xx-small;
+    }
   }
-  .btn {
-    font-size: xx-small;
+  
+  @media screen and (min-width: 1120px) {
+  
+      .container {
+          min-height: 50px;
+      }
   }
-}
+  
+  @media screen and (max-width: 400px) {
+  
+      .container {
+        min-height: 15px;
+      }
+  
+      .btn{
+          font-size: 9px;
+          font-weight: 500;
+      }
+  
+      .fa-lg{
+          font-size: 11px;
+      }
+  }
+  
+  @media screen and (min-width: 880px) and (max-width: 1180px) {
+  
+      .container {
+          min-height: 30px;
+      }
+  }
+  
+  @media screen and (min-width: 1180px) and (max-width: 1300px) {
+  
+      .container {
+          min-height: 40px;
+      }
+  }
+  
+  
