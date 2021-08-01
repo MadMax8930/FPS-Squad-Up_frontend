@@ -97,15 +97,39 @@ div span:hover, fa-icon:hover {
   @media screen and (min-width: 880px) and (max-width: 1180px) {
   
       .container {
-          min-height: 30px;
+          min-height: 20px;
+      }
+
+      .about-text{
+        position: relative;
+        top: 3px;
+
       }
   }
   
   @media screen and (min-width: 1180px) and (max-width: 1300px) {
   
       .container {
-          min-height: 40px;
+          min-height: 30px;
+      }
+
+      .about-text{
+        position: relative;
+        top: 5px;
+
       }
   }
   
+
+  @media screen and (min-width: 1300px) {
   
+    .container {
+        min-height: 45px;
+    }
+
+    .about-text{
+      position: relative;
+      top: 18px;
+
+    }
+}

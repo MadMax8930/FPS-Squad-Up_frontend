@@ -19,6 +19,7 @@ import { AuthInterceptor } from './services/auth.interceptor';
 import { SearchComponent } from './search/search.component';
 import { AboutComponent } from './about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CriteriaComponent } from './criteria/criteria.component';
 
 
 
@@ -36,6 +37,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RegisterComponent,
     SearchComponent,
     AboutComponent,
+    CriteriaComponent,
   ],
 
   imports: [
